@@ -9,20 +9,14 @@
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.css"> <!-- bootstrap styles -->
+    <link rel="stylesheet" href="css/font-awesome.min.css"> <!-- font-awesome fonts -->
+    <link rel="stylesheet" href="css/jquery.formstyler.css"> <!-- custom styles for inputs -->
     <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
   	<link rel="stylesheet" href="css/styles.css"> <!-- main styles -->
   </head>
   <body>
     <header>
         <div class="container">
-
-          <div class="top-logo">
-            <a href="#">
-              <img src="" alt="">
-              <span class="top-logo__text">лови<span class="gray">рыбу</span><span class="blue">.ru</span></span>
-            </a>
-          </div> <!-- .top-logo -->
-
           <nav class="navbar navbar-default">
             <div class="container-fluid">
               <!-- Brand and toggle get grouped for better mobile display -->
@@ -33,39 +27,372 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Brand</a>
+
+                <a href="#" class="top-logo">
+                  <img src="images/top-logo.png" alt="">
+                </a> <!-- .top-logo -->
+
               </div>
 
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                  <li><a href="#"><span>Рыбалкжа<img src="" alt=""></span></a></li>
-                  <li><a href="#"><span>Транспорт<img src="" alt=""></span></a></li>
-                  <li><a href="#"><span>Разное<img src="" alt=""></span></a></li>
+                  <li class="active"><a href="#"><span>Рыбалка<i class="fa fa-chevron-down"></i></span></a></li>
+                  <li><a href="#"><span>Транспорт<i class="fa fa-chevron-down"></i></span></a></li>
+                  <li><a href="#"><span>Разное<i class="fa fa-chevron-down"></i></span></a></li>
                 </ul>
+                <div class="offer-and-login-block">
+                  <div class="offer">
+                    <a href="" class="offer__link"><span>Подать объявление</span></a>
+                  </div>
+                  <div class="login-block">
+                    <a href="#" class="login-block__first-element"><i class="fa fa-heart"></i></a>
+                    <a href="" class="login-block__second-element">Вход и регистрация</a>
+                  </div>
+                </div> <!-- .offer-and-login-block -->
               </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
           </nav>
 
-          <div class="offer-and-login-block">
-            <div class="offer">
-              <a href="" class="offer__link"><span>Подать объявление</span></a>
-            </div>
-            <div class="login-block">
-              <div class="login-block__elements">
-                <a href="#" class="login-block__first-element"><img src="" alt=""></a>
-                <a href="" class="login-block__second-element">Вход и регистрация</a>
-              </div>
-            </div>
-          </div> <!-- .offer-and-login-block -->
-
         </div>
     </header>
 
+    <main>
+      <div class="presentation-block">
+          <div class="container">
+            <h1 class="presentation-block__title">Сайт бесплатных объявлений для рыболовов России</h1>
+            <p class="presentation-block__description">На сайте более <span>100 000</span> объявлений</p>
+          </div>
 
+          <div class="top-form-block">
+            <div class="container">
+              <div class="top-form-wrapper">
+                <form action="#" method="get">
+                  <select name="categories-field" id="">
+                    <option value="">Все категории</option>
+                    <option value="">категория 1</option>
+                    <option value="">категория 2</option>
+                    <option value="">категория 3</option>
+                    <option value="">категория 4</option>
+                  </select>
+                  <input type="text" name="search-field" placeholder="Поиск по обьявлениям">
+                  <select name="cities-field" id="">
+                    <option value="">Москва</option>
+                    <option value="">Санкт-петербург</option>
+                    <option value="">Казань</option>
+                    <option value="">Владивосток</option>
+                    <option value="">Томск</option>
+                  </select>
+                  <select name="subway-field" id="">
+                    <option value="">Все категории</option>
+                    <option value="">Станция метро</option>
+                    <option value="">Лубянка</option>
+                    <option value="">Курская</option>
+                    <option value="">Станция спортивная</option>
+                  </select>
+                    <input type="submit" value="Найти">
+                </form>
+              </div> <!-- .top-form-wrapper -->
 
+            </div> <!-- .container -->
+        </div> <!-- .top-form-block -->
+      </div> <!-- .presentaiton-block -->
+
+      <div class="ads-block">
+          <div class="container">
+            <h2 class="mini-cards-block__title">Новые объявления</h2>
+
+            <div class="mini-cards-block row">
+
+              <div class="one-item col-lg-3 col-lg-3 col-sm-6 col-xs-12">
+                <a href="#" class="one-item__like-button">
+                  <img src="" alt="">
+                </a>
+                <figure class="one-item__image-container">
+                  <img src="" alt="">
+                </figure>
+                <div class="one-item__information">
+                  <a href="" class="one-item__title">Спиннинг штекерный Atemi "Seliger", 2.7 м, 14-42 г</a>
+                  <div class="one-item__price">5 250 руб.</div>
+                  <div class="one-item__sections-link">
+                    <a href="#">Рыбалка</a>
+                    <span>/</span>
+                    <a href="#">Катушки</a>
+                  </div>
+                  <div class="one-item__subway">м. Владыкино</div>
+                  <div class="one-item__date">Сегодня 19:40</div>
+                </div> <!-- .one-item__information -->
+              </div> <!-- .one-item -->
+
+              <div class="one-item col-lg-3 col-lg-3 col-sm-6 col-xs-12">
+                <a href="#" class="one-item__like-button">
+                  <img src="" alt="">
+                </a>
+                <figure class="one-item__image-container">
+                  <img src="" alt="">
+                </figure>
+                <div class="one-item__information">
+                  <a href="" class="one-item__title">Спиннинг штекерный Atemi "Seliger", 2.7 м, 14-42 г</a>
+                  <div class="one-item__price">5 250 руб.</div>
+                  <div class="one-item__sections-link">
+                    <a href="#">Рыбалка</a>
+                    <span>/</span>
+                    <a href="#">Катушки</a>
+                  </div>
+                  <div class="one-item__subway">м. Владыкино</div>
+                  <div class="one-item__date">Сегодня 19:40</div>
+                </div> <!-- .one-item__information -->
+              </div> <!-- .one-item -->
+
+              <div class="one-item col-lg-3 col-lg-3 col-sm-6 col-xs-12">
+                <a href="#" class="one-item__like-button">
+                  <img src="" alt="">
+                </a>
+                <figure class="one-item__image-container">
+                  <img src="" alt="">
+                </figure>
+                <div class="one-item__information">
+                  <a href="" class="one-item__title">Спиннинг штекерный Atemi "Seliger", 2.7 м, 14-42 г</a>
+                  <div class="one-item__price">5 250 руб.</div>
+                  <div class="one-item__sections-link">
+                    <a href="#">Рыбалка</a>
+                    <span>/</span>
+                    <a href="#">Катушки</a>
+                  </div>
+                  <div class="one-item__subway">м. Владыкино</div>
+                  <div class="one-item__date">Сегодня 19:40</div>
+                </div> <!-- .one-item__information -->
+              </div> <!-- .one-item -->
+
+              <div class="one-item col-lg-3 col-lg-3 col-sm-6 col-xs-12">
+                <a href="#" class="one-item__like-button">
+                  <img src="" alt="">
+                </a>
+                <figure class="one-item__image-container">
+                  <img src="" alt="">
+                </figure>
+                <div class="one-item__information">
+                  <a href="" class="one-item__title">Спиннинг штекерный Atemi "Seliger", 2.7 м, 14-42 г</a>
+                  <div class="one-item__price">5 250 руб.</div>
+                  <div class="one-item__sections-link">
+                    <a href="#">Рыбалка</a>
+                    <span>/</span>
+                    <a href="#">Катушки</a>
+                  </div>
+                  <div class="one-item__subway">м. Владыкино</div>
+                  <div class="one-item__date">Сегодня 19:40</div>
+                </div> <!-- .one-item__information -->
+              </div> <!-- .one-item -->
+            </div> <!-- .mini-cards-block -->
+
+            <div class="micro-cards-block row">
+
+              <div class="one-item col-lg-2 col-lg-2 col-sm-4 col-xs-12">
+                <a href="#" class="one-item__like-button">
+                  <img src="" alt="">
+                </a>
+                <figure class="one-item__image-container">
+                  <img src="" alt="">
+                </figure>
+                <div class="one-item__information">
+                  <a href="" class="one-item__title">Спиннинг штекерный Atemi "Seliger", 2.7 м, 14-42 г</a>
+                  <div class="one-item__price">5 250 руб.</div>
+                </div> <!-- .one-item__information -->
+              </div> <!-- .one-item -->
+
+              <div class="one-item col-lg-2 col-lg-2 col-sm-4 col-xs-12">
+                <a href="#" class="one-item__like-button">
+                  <img src="" alt="">
+                </a>
+                <figure class="one-item__image-container">
+                  <img src="" alt="">
+                </figure>
+                <div class="one-item__information">
+                  <a href="" class="one-item__title">Спиннинг штекерный Atemi "Seliger", 2.7 м, 14-42 г</a>
+                  <div class="one-item__price">5 250 руб.</div>
+                </div> <!-- .one-item__information -->
+              </div> <!-- .one-item -->
+
+              <div class="one-item col-lg-2 col-lg-2 col-sm-4 col-xs-12">
+                <a href="#" class="one-item__like-button">
+                  <img src="" alt="">
+                </a>
+                <figure class="one-item__image-container">
+                  <img src="" alt="">
+                </figure>
+                <div class="one-item__information">
+                  <a href="" class="one-item__title">Спиннинг штекерный Atemi "Seliger", 2.7 м, 14-42 г</a>
+                  <div class="one-item__price">5 250 руб.</div>
+                </div> <!-- .one-item__information -->
+              </div> <!-- .one-item -->
+
+              <div class="one-item col-lg-2 col-lg-2 col-sm-4 col-xs-12">
+                <a href="#" class="one-item__like-button">
+                  <img src="" alt="">
+                </a>
+                <figure class="one-item__image-container">
+                  <img src="" alt="">
+                </figure>
+                <div class="one-item__information">
+                  <a href="" class="one-item__title">Спиннинг штекерный Atemi "Seliger", 2.7 м, 14-42 г</a>
+                  <div class="one-item__price">5 250 руб.</div>
+                </div> <!-- .one-item__information -->
+              </div> <!-- .one-item -->
+
+              <div class="one-item col-lg-2 col-lg-2 col-sm-4 col-xs-12">
+                <a href="#" class="one-item__like-button">
+                  <img src="" alt="">
+                </a>
+                <figure class="one-item__image-container">
+                  <img src="" alt="">
+                </figure>
+                <div class="one-item__information">
+                  <a href="" class="one-item__title">Спиннинг штекерный Atemi "Seliger", 2.7 м, 14-42 г</a>
+                  <div class="one-item__price">5 250 руб.</div>
+                </div> <!-- .one-item__information -->
+              </div> <!-- .one-item -->
+
+              <div class="one-item col-lg-2 col-lg-2 col-sm-4 col-xs-12">
+                <a href="#" class="one-item__like-button">
+                  <img src="" alt="">
+                </a>
+                <figure class="one-item__image-container">
+                  <img src="" alt="">
+                </figure>
+                <div class="one-item__information">
+                  <a href="" class="one-item__title">Спиннинг штекерный Atemi "Seliger", 2.7 м, 14-42 г</a>
+                  <div class="one-item__price">5 250 руб.</div>
+                </div> <!-- .one-item__information -->
+              </div> <!-- .one-item -->
+
+            </div> <!-- .micro-cards-block -->
+          </div> <!-- .container -->
+      </div> <!-- .ads-block -->
+
+      <div class="change-city-block">
+        <div class="container">
+          <div class="pin-icon"></div>
+          <div class="list-of-cities-block">
+          <ul class="list-of-cities-column">
+            <li class="city"><a href="#">Москва</a></li>
+            <li class="city"><a href="#">Санкт-Петербург</a></li>
+            <li class="city"><a href="#">Волгоград</a></li>
+            <li class="city"><a href="#">Екатеринбург</a></li>
+            <li class="city"><a href="#">Казань</a></li>
+            <li class="city"><a href="#">Краснодар</a></li>
+            <li><a href="#">Нижний Новгород</a></li>
+            <li><a href="#">Пермь</a></li>
+            <li><a href="#">Ростов-на-Дону</a></li>
+            <li><a href="#">Самара</a></li>
+            <li><a href="#">Уфа</a></li>
+            <li><a href="#">Челябинск</a></li>
+            <li><a href="#">Адыгея</a></li>
+            <li><a href="#">Архангельская обл.</a></li>
+            <li><a href="#">Астраханская обл.</a></li>
+          </ul>
+
+          <ul class="list-of-cities-column">
+            <li><a href="#">Башкортостан</a></li>
+            <li><a href="#">Белгородская обл.</a></li>
+            <li><a href="#">Брянская обл.</a></li>
+            <li><a href="#">Владимирская обл.</a></li>
+            <li><a href="#">Волгоградская обл.</a></li>
+            <li><a href="#">Вологодская обл.</a></li>
+            <li><a href="#">Воронежская обл.</a></li>
+            <li><a href="#">Дагестан</a></li>
+            <li><a href="#">Ивановская обл.</a></li>
+            <li><a href="#">Ингушетия</a></li>
+            <li><a href="#">Кабардино-Балкария</a></li>
+            <li><a href="#">Калининградская обл.</a></li>
+            <li><a href="#">Калмыкия</a></li>
+            <li><a href="#">Калужская обл.</a></li>
+            <li><a href="#">Карачаево-Черкесия</a></li>
+          </ul>
+
+          <ul class="list-of-cities-column">
+            <li><a href="#">Карелия</a></li>
+            <li><a href="#">Кировская обл.</a></li>
+            <li><a href="#">Коми</a></li>
+            <li><a href="#">Костромская обл.</a></li>
+            <li><a href="#">Краснодарский край</a></li>
+            <li><a href="#">Крым</a></li>
+            <li><a href="#">Курганская обл.</a></li>
+            <li><a href="#">Курская обл.</a></li>
+            <li><a href="#">Ленинградская обл.</a></li>
+            <li><a href="#">Липецкая обл.</a></li>
+            <li><a href="#">Марий Эл</a></li>
+            <li><a href="#">Мордовия</a></li>
+            <li><a href="#">Московская обл.</a></li>
+            <li><a href="#">Мурманская обл.</a></li>
+            <li><a href="#">Ненецкий АО</a></li>
+          </ul>
+
+          <ul class="list-of-cities-column">
+            <li><a href="#">Нижегородская обл.</a></li>
+            <li><a href="#">Новгородская обл.</a></li>
+            <li><a href="#">Оренбургская обл.</a></li>
+            <li><a href="#">Орловская обл.</a></li>
+            <li><a href="#">Пензенская обл.</a></li>
+            <li><a href="#">Пермский край</a></li>
+            <li><a href="#">Псковская обл.</a></li>
+            <li><a href="#">Ростовская обл.</a></li>
+            <li><a href="#">Рязанская обл.</a></li>
+            <li><a href="#">Самарская обл.</a></li>
+            <li><a href="#">Саратовская обл.</a></li>
+            <li><a href="#">Свердловская обл.</a></li>
+            <li><a href="#">Северная Осетия</a></li>
+            <li><a href="#">Смоленская обл.</a></li>
+            <li><a href="#">Ставропольский край</a></li>
+          </ul>
+
+          <ul class="list-of-cities-column">
+            <li><a href="#">Тамбовская обл.</a></li>
+            <li><a href="#">Татарстан</a></li>
+            <li><a href="#">Тверская обл.</a></li>
+            <li><a href="#">Тульская обл.</a></li>
+            <li><a href="#">Удмуртия</a></li>
+            <li><a href="#">Ульяновская обл.</a></li>
+            <li><a href="#">Челябинская обл.</a></li>
+            <li><a href="#">Чеченская республика</a></li>
+            <li><a href="#">Чувашия</a></li>
+            <li><a href="#">Ярославская обл.</a></li>
+          </ul>
+          </div> <!-- .list-of-cities-block -->
+        </div> <!-- .container -->
+      </div> <!-- .change-city-block -->
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="bottom-menu">
+          <ul>
+            <li class="bottom-menu__item"><a href="#">Подать объявление</a></li>
+            <li class="bottom-menu__item"><a href="#">Объявления</a></li>
+            <li class="bottom-menu__item"><a href="#">Помощь</a></li>
+            <li class="bottom-menu__item"><a href="#">Безопасность</a></li>
+            <li class="bottom-menu__item"><a href="#">Реклама</a></li>
+            <li class="bottom-menu__item"><a href="#">на сайте</a></li>
+            <li class="bottom-menu__item"><a href="#">О компании</a></li>
+          </ul>
+        </div> <!-- .bottom-menu -->
+
+        <div class="social-block">
+          <a href="#" class="vk"></a>
+          <a href="#" class="fb"></a>
+          <a href="#" class="tw"></a>
+          <a href="#" class="yt"></a>
+        </div> <!-- .social-block -->
+
+        <div class="copyright">
+            <span>&copy; 2016 ЛовиРыбу.ru - доска обьявлений для рыболовов.</span>
+        </div>
+
+      </div> <!-- .container -->
+    </footer>
 
     <script src="js/jquery-2.2.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/interface.js"></script>
   </body>
 </html>
