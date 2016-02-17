@@ -1,0 +1,293 @@
+<html>
+
+  <head>
+    <meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<title>Карточка товара</title>
+  	<meta name="description" content="">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.css"> <!-- bootstrap styles -->
+    <link rel="stylesheet" href="css/font-awesome.min.css"> <!-- font-awesome fonts -->
+    <link rel="stylesheet" href="css/jquery.formstyler.css"> <!-- custom styles for inputs -->
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  	<link rel="stylesheet" href="css/styles.css"> <!-- main styles -->
+  </head>
+  <body>
+    <header>
+        <div class="container">
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+
+                <a href="#" class="top-logo">
+                  <img src="images/top-logo.png" alt="">
+                </a> <!-- .top-logo -->
+
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="#"><span>Рыбалка<i class="fa fa-chevron-down"></i></span></a></li>
+                  <li><a href="#"><span>Транспорт<i class="fa fa-chevron-down"></i></span></a></li>
+                  <li><a href="#"><span>Разное<i class="fa fa-chevron-down"></i></span></a></li>
+                </ul>
+                <div class="offer-and-login-block">
+                  <div class="offer">
+                    <a href="" class="offer__link"><span>Подать объявление</span></a>
+                  </div>
+                  <div class="login-block">
+                    <a href="#" class="login-block__first-element"><i class="fa fa-heart"></i></a>
+                    <a href="" class="login-block__second-element">Вход и регистрация</a>
+                  </div>
+                </div> <!-- .offer-and-login-block -->
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+
+        </div>
+    </header>
+
+    <section class="breadcrumb-block">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Рыбалка</a></li>
+          <li class="active">Катушки</li>
+        </ol>
+      </div>
+    </section>
+    <main id="product-card-page">
+      <div class="container">
+        <h2>Катушка Abu Garcia Ambassadeur Classic 6000</h2>
+        <div class="row">
+
+          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+
+            <section class="products-photos">
+              <div class="poduct-meta">
+                <a href="#" class="location">Москва, Московская обл.,</a>
+                <div class="date-and-number">
+                  <span class="date">Добавлено: в 09:45, 8 февраля 2016, </span>
+                  <span class="number">Номер объявления: 226313026</span>
+                </div>
+              </div>
+              <div class="big-photo">
+                <a href="#"><img src="images/big-photo.jpg" alt=""></a>
+              </div>
+
+              <div class="small-photos">
+                <a href="#" class="active small-photo"><img src="images/small-photo.jpg" alt=""></a>
+                <a href="#" class="small-photo"><img src="images/small-photo.jpg" alt=""></a>
+                <a href="#" class="small-photo"><img src="images/small-photo.jpg" alt=""></a>
+                <a href="#" class="small-photo"><img src="images/small-photo.jpg" alt=""></a>
+                <a href="#" class="small-photo"><img src="images/small-photo.jpg" alt=""></a>
+              </div>
+            </section> <!-- .products-photos -->
+
+          </div>
+
+          <div class="col-lg-4 col-md4 col-sm-4 col-xs-12">
+
+            <section class="product-information">
+              <div class="product-information-price">
+                <span class="product-information__tag">Цена</span>
+                <span class="product-information-price__value">10 680 <span>руб.</span></span>
+              </div>
+
+              <div class="product-information-seller clearfix">
+                <span class="product-information__tag">Продавец</span>
+                <div class="product-information-seller-info">
+
+                  <span class="product-information-seller-info__name">Алексей</span>
+                  <span class="product-information-seller-info__duration">на LoviRybu c сентября 2015</span>
+                  <a href="#" class="product-information-seller-info__other-ads">Другие объявления автора</a>
+                  <a href="#" class="product-information-seller-info__show-phone"><i class="fa fa-phone"></i>Показать телефон</a>
+                  <a href="#" class="product-information-seller-info__write-seller"><i class="fa fa-envelope-o"></i>Написать автору</a>
+
+                </div>
+              </div> <!-- product-informaition-seller -->
+
+              <div class="product-information-city">
+                <span class="product-information__tag">Город</span>
+                <a href="#" class="product-information-city__name">Москва</a>
+              </div>
+
+              <div class="product-information-cond">
+                <span class="product-information__tag">Состояние</span>
+                <span class="product-information-cond__value">Новый</span>
+              </div>
+
+              <div class="product-information-brand">
+                <span class="product-information__tag">Бренд</span>
+                <span class="product-information-brand__name">Abu Garcia</span>
+              </div>
+
+            </section> <!-- .product-information -->
+
+            <section class="product-information-actions">
+              <a href="#" class="product-information-actions__link"><i class="fa fa-heart"></i>В избранное</a>
+              <a href="#" class="product-information-actions__link"><i class="fa fa-info-circle"></i>Пожаловаться</a>
+              <a href="#" class="product-information-actions__link"><i class="fa fa-share-alt"></i>Поделиться</a>
+              <a href="#" class="product-information-actions__link"><i class="fa fa-print"></i>Печать</a>
+            </section> <!-- .product-information-actions -->
+
+          </div>
+
+
+
+
+          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+            <section class="product-description">
+              <div class="product-description-one-block">
+                <h4>Катушка Abu Garcia Ambassadeur Classic C6 Record 61</h4>
+                <ul>
+                  <li>Катушка Abu Garcia Ambassadeur Classic C6 Record 61</li>
+                  <li>Надежная мультипликаторная катушка.</li>
+                </ul>
+              </div>
+
+              <div class="product-description-one-block">
+                <div>Из особенностей:</div>
+                <ul>
+                  <li>1. Вентилируемая низкопрофильная шпуля</li>
+                  <li>2. Наличие трещетки (применимо для тех, кто будет ловить не кастингом. Сам использовал один раз при ловле сома с берега.)</li>
+                </ul>
+              </div>
+
+              <div class="product-description-one-block">
+                <div>Все остальное как в описании производителя:</div>
+                <ul>
+                  <li>Передаточное - 5,3:1</li>
+                  <li>Вес - 365 гр.</li>
+                  <li>Емкость - 0,4-100м, но по факту, у меня влазило около 70 метров 80либровой плетенки (Regal sensor)</li>
+                  <li>Катушка побывала на 5-7 рыбалках. После покупки лексы, абушка была отправлена в коробку. За последние 1,5 сезона воды не видела (на домике спросите у любого из джеркменов).</li>
+                  <li>Состояние катушки отличное (ставлю 5-, так как на 5 идет новая катушка).</li>
+                  <li>Отвечу на все интересующие вопросы в личку.</li>
+                  <li>П.С. Плетенка намотана рабочая</li>
+                  <li>Торг уместен реальным покупателям.</li>
+                </ul>
+              </div>
+
+              <div class="product-description-one-block">
+                <div>Информация о доставке</div>
+                <ul>
+                  <li>Отправка в любой город наложенным платежом при предоплате 2 000 руб. </li>
+                  <li>Или на карту привата.</li>
+                </ul>
+              </div>
+            </section> <!-- .product-description -->
+          </div>
+
+          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+            <section class="same-ads">
+              <h2>Похожие объявления</h2>
+
+              <div class="same-ads-block row">
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                  <div class="one-item one-item_micro">
+                    <a href="#" class="one-item__like-button"><i class="fa fa-heart"></i></a>
+                    <figure class="one-item__image-container one-item__image-container_micro">
+                      <img src="images/micro-card_image-1.png" alt="">
+                    </figure>
+                    <div class="one-item__information">
+                      <a href="" class="one-item__title one-item__title_micro">Спиннинг штекерный Atemi "Seliger", 2.7 м, 14-42 г</a>
+                      <div class="one-item__price one-item__price_micro">5 250 руб.</div>
+                    </div> <!-- .one-item__information -->
+                  </div> <!-- .one-item -->
+                </div> <!-- col-lg-2 col-lg-2 col-sm-4 col-xs-12 -->
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                  <div class="one-item one-item_micro">
+                    <a href="#" class="one-item__like-button"><i class="fa fa-heart"></i></a>
+                    <figure class="one-item__image-container one-item__image-container_micro">
+                      <img src="images/micro-card_image-1.png" alt="">
+                    </figure>
+                    <div class="one-item__information">
+                      <a href="" class="one-item__title one-item__title_micro">Спиннинг штекерный Atemi "Seliger", 2.7 м, 14-42 г</a>
+                      <div class="one-item__price one-item__price_micro">5 250 руб.</div>
+                    </div> <!-- .one-item__information -->
+                  </div> <!-- .one-item -->
+                </div> <!-- col-lg-2 col-lg-2 col-sm-4 col-xs-12 -->
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                  <div class="one-item one-item_micro">
+                    <a href="#" class="one-item__like-button"><i class="fa fa-heart"></i></a>
+                    <figure class="one-item__image-container one-item__image-container_micro">
+                      <img src="images/micro-card_image-1.png" alt="">
+                    </figure>
+                    <div class="one-item__information">
+                      <a href="" class="one-item__title one-item__title_micro">Спиннинг штекерный Atemi "Seliger", 2.7 м, 14-42 г</a>
+                      <div class="one-item__price one-item__price_micro">5 250 руб.</div>
+                    </div> <!-- .one-item__information -->
+                  </div> <!-- .one-item -->
+                </div> <!-- col-lg-2 col-lg-2 col-sm-4 col-xs-12 -->
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                  <div class="one-item one-item_micro">
+                    <a href="#" class="one-item__like-button"><i class="fa fa-heart"></i></a>
+                    <figure class="one-item__image-container one-item__image-container_micro">
+                      <img src="images/micro-card_image-1.png" alt="">
+                    </figure>
+                    <div class="one-item__information">
+                      <a href="" class="one-item__title one-item__title_micro">Спиннинг штекерный Atemi "Seliger", 2.7 м, 14-42 г</a>
+                      <div class="one-item__price one-item__price_micro">5 250 руб.</div>
+                    </div> <!-- .one-item__information -->
+                  </div> <!-- .one-item -->
+                </div> <!-- col-lg-2 col-lg-2 col-sm-4 col-xs-12 -->
+
+
+              </div> <!-- .same-ads-block -->
+            </section> <!-- same-ads -->
+          </div> <!-- col-lg-8 col-md-8 col-sm-8 -->
+
+
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="bottom-menu">
+          <ul>
+            <li class="bottom-menu__item"><a href="#">Подать объявление</a></li>
+            <li class="bottom-menu__item"><a href="#">Объявления</a></li>
+            <li class="bottom-menu__item"><a href="#">Помощь</a></li>
+            <li class="bottom-menu__item"><a href="#">Безопасность</a></li>
+            <li class="bottom-menu__item"><a href="#">Реклама</a></li>
+            <li class="bottom-menu__item"><a href="#">на сайте</a></li>
+            <li class="bottom-menu__item"><a href="#">О компании</a></li>
+          </ul>
+        </div> <!-- .bottom-menu -->
+
+        <div class="social-block">
+          <a href="#" class="vk"></a>
+          <a href="#" class="fb"></a>
+          <a href="#" class="tw"></a>
+          <a href="#" class="yt"></a>
+        </div> <!-- .social-block -->
+
+        <div class="copyright">
+            <span>&copy; 2016 ЛовиРыбу.ru - доска обьявлений для рыболовов.</span>
+        </div>
+
+      </div> <!-- .container -->
+    </footer>
+
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/interface.js"></script>
+  </body>
+</html>

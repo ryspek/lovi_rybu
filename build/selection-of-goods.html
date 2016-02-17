@@ -1,0 +1,470 @@
+<html>
+
+  <head>
+    <meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<title>Подбор товаров</title>
+  	<meta name="description" content="">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.css"> <!-- bootstrap styles -->
+    <link rel="stylesheet" href="css/font-awesome.min.css"> <!-- font-awesome fonts -->
+    <link rel="stylesheet" href="css/jquery.formstyler.css"> <!-- custom styles for inputs -->
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  	<link rel="stylesheet" href="css/styles.css"> <!-- main styles -->
+  </head>
+  <body>
+    <header>
+        <div class="container">
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+
+                <a href="#" class="top-logo">
+                  <img src="images/top-logo.png" alt="">
+                </a> <!-- .top-logo -->
+
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="#"><span>Рыбалка<i class="fa fa-chevron-down"></i></span></a></li>
+                  <li><a href="#"><span>Транспорт<i class="fa fa-chevron-down"></i></span></a></li>
+                  <li><a href="#"><span>Разное<i class="fa fa-chevron-down"></i></span></a></li>
+                </ul>
+                <div class="offer-and-login-block">
+                  <div class="offer">
+                    <a href="" class="offer__link"><span>Подать объявление</span></a>
+                  </div>
+                  <div class="login-block">
+                    <a href="#" class="login-block__first-element"><i class="fa fa-heart"></i></a>
+                    <a href="" class="login-block__second-element">Вход и регистрация</a>
+                  </div>
+                </div> <!-- .offer-and-login-block -->
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+
+        </div>
+    </header>
+
+    <section class="breadcrumb-block">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Рыбалка</a></li>
+          <li class="active">Катушки</li>
+        </ol>
+      </div>
+    </section>
+    <main id="selection-of-goods-page">
+      <div class="container">
+
+        <div class="row">
+          <aside class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+
+            <div class="filter-form">
+              <h3 class="filter-form-title">Выбор фильтров</h3>
+              <form action="#" method="get">
+                <div class="checkboxes">
+                  <div class="checkboxes-title">Катуши</div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="checkbox1" checked>
+                    <label for="checkbox1">С бейтраниром (156)</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" id="checkbox2" checked>
+                    <label for="checkbox2">Зимние (48)</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" id="checkbox3">
+                    <label for="checkbox3">Безынерционные (156)</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" id="checkbox4">
+                    <label for="checkbox4">Мультипликаторные (48)</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" id="checkbox5">
+                    <label for="checkbox5">Нахлыстные (156)</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" id="checkbox6">
+                    <label for="checkbox6">Мультипликаторные (48)</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" id="checkbox7">
+                    <label for="checkbox7">С бейтраниром (156)</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" id="checkbox8">
+                    <label for="checkbox8">Зимние (48)</label>
+                  </div>
+                </div> <!-- .checkboxes   -->
+
+                <div class="main-input filter-input">
+                  <label for="choose-country" class="filter-input__label">Страна</label>
+                  <select name="categories-field" id="choose-country" class="filter-input__select">
+                    <option value="1">Россия</option>
+                    <option value="">Польша</option>
+                    <option value="">Испания</option>
+                    <option value="">Германия</option>
+                    <option value="">Китай</option>
+                  </select>
+                </div>
+
+                <div class="main-input filter-input__label">
+                  <label for="choose-city" class="filter-input__label">Область</label>
+                  <select name="cities-field" id="choose-city" class="filter-input__select">
+                    <option value="1">Выберите регион</option>
+                    <option value="">Санкт-петербург</option>
+                    <option value="">Казань</option>
+                    <option value="">Владивосток</option>
+                    <option value="">Томск</option>
+                  </select>
+                </div>
+
+
+                <div class="main-input filter-input">
+                  <label for="choose-city" class="filter-input__label">Город</label>
+                  <select name="cities-field" id="choose-city" class="filter-input__select">
+                    <option value="1">Выберите город</option>
+                    <option value="">Санкт-петербург</option>
+                    <option value="">Казань</option>
+                    <option value="">Владивосток</option>
+                    <option value="">Томск</option>
+                  </select>
+                </div>
+
+                <div class="show-only">
+                  <div class="show-only__title">Показать только</div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="checkbox9" checked>
+                    <label for="checkbox9"> Объявления с фотографиями</label>
+                  </div>
+                </div>
+
+                <div class="range-filter">
+                  <div class="price-controls">
+                      <input type="text" class="min-price" value="150"> <span>-</span>
+                      <input type="text" class="max-price" value="150 000 000"> <span>руб.</span>
+                  </div>
+
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                      <div class="toggle min-toggle"></div>
+                      <div class="toggle max-toggle"></div>
+                    </div>
+                  </div>
+                </div> <!-- .range-filter -->
+              </form>
+
+            </div> <!-- .filter-form -->
+          </aside>
+
+          <section class="content col-lg-6 col-md-6 col-sm-8 col-xs-12">
+
+            <div class="catalog-list">
+              <h2 class="catalog-list-title">Катушки</h2>
+
+              <div class="catalog-list-control">
+                <div class="list-control-sort">
+                  <span class="list-control-sort__text">Сортировать по: </span>
+                  <a href="#" class="list-control-sort__toggle">возрастанию цены<i class="fa fa-caret-down"></i><i class="fa fa-caret-up"></i></a>
+                </div>
+
+                <div class="list-control-view-mode">
+                  <a href="#" class="list-control-view-mode__block"><i class="fa fa-th-large"></i></a>
+                  <a href="#" class="list-control-view-mode__list"><i class="fa fa-bars"></i></a>
+                </div>
+              </div> <!-- .catalog-list-control -->
+
+              <div class="catalog-list-items">
+
+                <div class="one-item">
+                  <a href="#" class="one-item__like-button"><i class="fa fa-heart"></i></a>
+                  <figure class="one-item__image-container">
+                    <img src="images/mini-card_image-1.png" alt="">
+                  </figure>
+                  <div class="one-item__information">
+                    <a href="" class="one-item__title">Спиннинг штекерный Atemi "Seliger", 2.7 м, 14-42 г</a>
+                    <p class="one-item__description">Передатка 6,2:1. Катушка прошла ТО в конце декабря у Олега Mutabor, после ТО была на двух коротких...</p>
+                    <div class="one-item__price">5 250 руб.</div>
+                    <div class="one-item__sections-link">
+                      <a href="#">Рыбалка</a>
+                      <span>/</span>
+                      <a href="#">Катушки</a>
+                    </div>
+                    <div class="one-item__subway">м. Владыкино</div>
+                    <div class="one-item__date">Сегодня 19:40</div>
+                  </div> <!-- .one-item__information -->
+                </div> <!-- .one-item -->
+
+                <div class="one-item">
+                  <a href="#" class="one-item__like-button"><i class="fa fa-heart"></i></a>
+                  <figure class="one-item__image-container">
+                    <img src="images/mini-card_image-1.png" alt="">
+                  </figure>
+                  <div class="one-item__information">
+                    <a href="" class="one-item__title">Спиннинг штекерный Atemi "Seliger", 2.7 м, 14-42 г</a>
+                    <p class="one-item__description">Передатка 6,2:1. Катушка прошла ТО в конце декабря у Олега Mutabor, после ТО была на двух коротких...</p>
+                    <div class="one-item__price">5 250 руб.</div>
+                    <div class="one-item__sections-link">
+                      <a href="#">Рыбалка</a>
+                      <span>/</span>
+                      <a href="#">Катушки</a>
+                    </div>
+                    <div class="one-item__subway">м. Владыкино</div>
+                    <div class="one-item__date">Сегодня 19:40</div>
+                  </div> <!-- .one-item__information -->
+                </div> <!-- .one-item -->
+
+                <div class="one-item">
+                  <a href="#" class="one-item__like-button"><i class="fa fa-heart"></i></a>
+                  <figure class="one-item__image-container">
+                    <img src="images/mini-card_image-1.png" alt="">
+                  </figure>
+                  <div class="one-item__information">
+                    <a href="" class="one-item__title">Спиннинг штекерный Atemi "Seliger", 2.7 м, 14-42 г</a>
+                    <p class="one-item__description">Передатка 6,2:1. Катушка прошла ТО в конце декабря у Олега Mutabor, после ТО была на двух коротких...</p>
+                    <div class="one-item__price">5 250 руб.</div>
+                    <div class="one-item__sections-link">
+                      <a href="#">Рыбалка</a>
+                      <span>/</span>
+                      <a href="#">Катушки</a>
+                    </div>
+                    <div class="one-item__subway">м. Владыкино</div>
+                    <div class="one-item__date">Сегодня 19:40</div>
+                  </div> <!-- .one-item__information -->
+                </div> <!-- .one-item -->
+
+                <div class="one-item">
+                  <a href="#" class="one-item__like-button"><i class="fa fa-heart"></i></a>
+                  <figure class="one-item__image-container">
+                    <img src="images/mini-card_image-1.png" alt="">
+                  </figure>
+                  <div class="one-item__information">
+                    <a href="" class="one-item__title">Спиннинг штекерный Atemi "Seliger", 2.7 м, 14-42 г</a>
+                    <p class="one-item__description">Передатка 6,2:1. Катушка прошла ТО в конце декабря у Олега Mutabor, после ТО была на двух коротких...</p>
+                    <div class="one-item__price">5 250 руб.</div>
+                    <div class="one-item__sections-link">
+                      <a href="#">Рыбалка</a>
+                      <span>/</span>
+                      <a href="#">Катушки</a>
+                    </div>
+                    <div class="one-item__subway">м. Владыкино</div>
+                    <div class="one-item__date">Сегодня 19:40</div>
+                  </div> <!-- .one-item__information -->
+                </div> <!-- .one-item -->
+
+                <div class="one-item">
+                  <a href="#" class="one-item__like-button"><i class="fa fa-heart"></i></a>
+                  <figure class="one-item__image-container">
+                    <img src="images/mini-card_image-1.png" alt="">
+                  </figure>
+                  <div class="one-item__information">
+                    <a href="" class="one-item__title">Спиннинг штекерный Atemi "Seliger", 2.7 м, 14-42 г</a>
+                    <p class="one-item__description">Передатка 6,2:1. Катушка прошла ТО в конце декабря у Олега Mutabor, после ТО была на двух коротких...</p>
+                    <div class="one-item__price">5 250 руб.</div>
+                    <div class="one-item__sections-link">
+                      <a href="#">Рыбалка</a>
+                      <span>/</span>
+                      <a href="#">Катушки</a>
+                    </div>
+                    <div class="one-item__subway">м. Владыкино</div>
+                    <div class="one-item__date">Сегодня 19:40</div>
+                  </div> <!-- .one-item__information -->
+                </div> <!-- .one-item -->
+
+                <div class="one-item">
+                  <a href="#" class="one-item__like-button"><i class="fa fa-heart"></i></a>
+                  <figure class="one-item__image-container">
+                    <img src="images/mini-card_image-1.png" alt="">
+                  </figure>
+                  <div class="one-item__information">
+                    <a href="" class="one-item__title">Спиннинг штекерный Atemi "Seliger", 2.7 м, 14-42 г</a>
+                    <p class="one-item__description">Передатка 6,2:1. Катушка прошла ТО в конце декабря у Олега Mutabor, после ТО была на двух коротких...</p>
+                    <div class="one-item__price">5 250 руб.</div>
+                    <div class="one-item__sections-link">
+                      <a href="#">Рыбалка</a>
+                      <span>/</span>
+                      <a href="#">Катушки</a>
+                    </div>
+                    <div class="one-item__subway">м. Владыкино</div>
+                    <div class="one-item__date">Сегодня 19:40</div>
+                  </div> <!-- .one-item__information -->
+                </div> <!-- .one-item -->
+
+              </div><!-- catalog-list-items -->
+
+              <div class="load-more">
+                <a href="#" class="load-more__link"><i class="fa fa-repeat"></i>Показать еще 25</a>
+              </div> <!-- .load-more -->
+
+              <nav class="catalog-list-pagination">
+                <ul class="pagination">
+                  <li class="active catalog-list-pagination__item"><a href="#">1</a></li>
+                  <li class="catalog-list-pagination__item"><a href="#">2</a></li>
+                  <li class="catalog-list-pagination__item"><a href="#">3</a></li>
+                  <li class="catalog-list-pagination__item"><a href="#">4</a></li>
+                  <li class="catalog-list-pagination__item"><a href="#">5</a></li>
+                  <li class="catalog-list-pagination__item"><a href="#">6</a></li>
+                  <li class="catalog-list-pagination__item"><a href="#">7</a></li>
+                  <li class="catalog-list-pagination__item"><a href="#">8</a></li>
+                  <li class="catalog-list-pagination__item"><a href="#">9</a></li>
+                  <li class="catalog-list-pagination__item"><a href="#">10</a></li>
+                  <li class="catalog-list-pagination__item">
+                    <a href="#" aria-label="Next">
+                      <span aria-hidden="true">Последняя</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+
+
+
+            </div> <!-- .catalog-list -->
+
+          </section>
+
+          <section class="banner col-lg-3 col-md-3 col-sm-4 col-xs-12">
+            <div class="banner-item">
+              <a href="#" class="banner-item__link"><img src="images/banner-image.jpg" alt=""></a>
+            </div>
+          </section>
+
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+
+      <section class="subcategories-block">
+        <div class="container">
+          <div class="subcategories-wrapper">
+
+            <div class="subcategory-column">
+              <a class="subcategory-column__title">
+                <span class="subcategory-column__icon"><img src="images/subcategory-icon1.png" alt=""></span>Рыбалка
+              </a>
+
+              <ul class="subcategories-list">
+                <li class="subcategories-list__item"><a href="#">Удилища</a></li>
+                <li class="subcategories-list__item"><a href="#">Катушки</a></li>
+                <li class="subcategories-list__item"><a href="#">Лески, шнуры</a></li>
+                <li class="subcategories-list__item"><a href="#">Твердые приманки</a></li>
+                <li class="subcategories-list__item"><a href="#">Мягкие приманки</a></li>
+                <li class="subcategories-list__item"><a href="#">Оснастка</a></li>
+                <li class="subcategories-list__item expand-list"><a href="#">Все категории <i class="fa fa-angle-right"></i></a></li>
+              </ul>
+            </div> <!-- .subcategory-column -->
+
+            <div class="subcategory-column">
+              <a class="subcategory-column__title">
+                <span class="subcategory-column__icon"><img src="images/subcategory-icon2.png" alt=""></span>Туризм
+              </a>
+
+              <ul class="subcategories-list">
+                <li class="subcategories-list__item"><a href="#">Рюкзаки</a></li>
+                <li class="subcategories-list__item"><a href="#">Палатки</a></li>
+                <li class="subcategories-list__item"><a href="#">Спальные мешки</a></li>
+                <li class="subcategories-list__item"><a href="#">Альпинизм</a></li>
+                <li class="subcategories-list__item"><a href="#">Путешествия</a></li>
+                <li class="subcategories-list__item"><a href="#">Фонарики</a></li>
+                <li class="subcategories-list__item expand-list"><a href="#">Все категории <i class="fa fa-angle-right"></i></a></li>
+              </ul>
+            </div> <!-- .subcategory-column -->
+
+            <div class="subcategory-column">
+              <a class="subcategory-column__title">
+                <span class="subcategory-column__icon"><img src="images/subcategory-icon3.png" alt=""></span>Транспорт
+              </a>
+
+              <ul class="subcategories-list">
+                <li class="subcategories-list__item"><a href="#">Водный транспорт</a></li>
+                <li class="subcategories-list__item"><a href="#">Автотехника</a></li>
+                <li class="subcategories-list__item"><a href="#">Купля, обмен</a></li>
+              </ul>
+            </div> <!-- .subcategory-column -->
+
+            <div class="subcategory-column">
+              <a class="subcategory-column__title">
+                <span class="subcategory-column__icon"><img src="images/subcategory-icon4.png" alt=""></span>Разное
+              </a>
+
+              <ul class="subcategories-list">
+                <li class="subcategories-list__item"><a href="#">Продам</a></li>
+                <li class="subcategories-list__item"><a href="#">Куплю, обмен</a></li>
+                <li class="subcategories-list__item"><a href="#">Подарю, приму в дар</a></li>
+                <li class="subcategories-list__item"><a href="#">Работа</a></li>
+                <li class="subcategories-list__item"><a href="#">Услуги</a></li>
+                <li class="subcategories-list__item"><a href="#">Аренда, прокат</a></li>
+                <li class="subcategories-list__item expand-list"><a href="#">Все категории <i class="fa fa-angle-right"></i></a></li>
+              </ul>
+            </div> <!-- .subcategory-column -->
+
+            <div class="subcategory-column">
+              <a class="subcategory-column__title">
+                <span class="subcategory-column__icon"><img src="images/subcategory-icon3.png" alt=""></span>Транспорт
+              </a>
+
+              <ul class="subcategories-list">
+                <li class="subcategories-list__item"><a href="#">Водный транспорт</a></li>
+                <li class="subcategories-list__item"><a href="#">Автотехника</a></li>
+                <li class="subcategories-list__item"><a href="#">Купля, обмен</a></li>
+              </ul>
+            </div> <!-- .subcategory-column -->
+
+          </div>
+        </div> <!-- .container -->
+      </section> <!-- .subcategories-wrapper -->
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="bottom-menu">
+          <ul>
+            <li class="bottom-menu__item"><a href="#">Подать объявление</a></li>
+            <li class="bottom-menu__item"><a href="#">Объявления</a></li>
+            <li class="bottom-menu__item"><a href="#">Помощь</a></li>
+            <li class="bottom-menu__item"><a href="#">Безопасность</a></li>
+            <li class="bottom-menu__item"><a href="#">Реклама</a></li>
+            <li class="bottom-menu__item"><a href="#">на сайте</a></li>
+            <li class="bottom-menu__item"><a href="#">О компании</a></li>
+          </ul>
+        </div> <!-- .bottom-menu -->
+
+        <div class="social-block">
+          <a href="#" class="vk"></a>
+          <a href="#" class="fb"></a>
+          <a href="#" class="tw"></a>
+          <a href="#" class="yt"></a>
+        </div> <!-- .social-block -->
+
+        <div class="copyright">
+            <span>&copy; 2016 ЛовиРыбу.ru - доска обьявлений для рыболовов.</span>
+        </div>
+
+      </div> <!-- .container -->
+    </footer>
+
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/interface.js"></script>
+  </body>
+</html>

@@ -2,7 +2,7 @@
 (function($) {
 $(function() {
 
-  $('select').styler();
+  $('input, select, checkbox').styler();
 
 });
 })(jQuery);
