@@ -1,0 +1,295 @@
+<html>
+
+  <head>
+    <meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<title>Подать объявление</title>
+  	<meta name="description" content="">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.css"> <!-- bootstrap styles -->
+    <link rel="stylesheet" href="css/font-awesome.min.css"> <!-- font-awesome fonts -->
+    <link rel="stylesheet" href="css/jquery.formstyler.css"> <!-- custom styles for inputs -->
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  	<link rel="stylesheet" href="css/styles.css"> <!-- main styles -->
+  </head>
+  <body>
+    <header>
+        <div class="container">
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+
+                <a href="#" class="top-logo">
+                  <img src="images/top-logo.png" alt="">
+                </a> <!-- .top-logo -->
+
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="#"><span>Рыбалка<i class="fa fa-chevron-down"></i></span></a></li>
+                  <li><a href="#"><span>Туризм<i class="fa fa-chevron-down"></i></span></a></li>
+                  <li><a href="#"><span>Транспорт<i class="fa fa-chevron-down"></i></span></a></li>
+                  <li><a href="#"><span>Разное<i class="fa fa-chevron-down"></i></span></a></li>
+                </ul>
+                <div class="offer-and-login-block">
+                  <div class="offer">
+                    <a href="" class="offer__link"><span>Подать объявление</span></a>
+                  </div>
+                  <div class="login-block">
+                    <a href="#" class="login-block__first-element"><i class="fa fa-heart"></i></a>
+                    <a href="" class="login-block__second-element">Вход и регистрация</a>
+                  </div>
+                </div> <!-- .offer-and-login-block -->
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+
+        </div>
+    </header>
+
+    <section class="breadcrumb-block">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="#">Главная</a></li>
+          <li class="active">Подать объявление</li>
+        </ol>
+      </div>
+    </section>
+    <main id="publish-ad">
+      <div class="container">
+        <h2>Подать объявление</h2>
+        <div class="row">
+
+          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+            <section class="publish-ad-form">
+              <form action="#" method="post" enctype="multipart/form-data">
+
+                <div class="publish-ad-one-item clearfix">
+                  <div class="left-column">
+                    <label for="choose-category" class="publish-ad-form-label">Категория<sup>*<sup></label>
+                  </div>
+                  <div class="right-column">
+                    <div class="main-input publish-input half-input">
+                      <div class="correct-message"><i class="fa fa-check-circle"></i></div>
+
+                      <select name="category-field" id="choose-category" class="publish-input__select">
+                        <option value="1">Выберите категорию</option>
+                        <option value="">Санкт-петербург</option>
+                        <option value="">Казань</option>
+                        <option value="">Владивосток</option>
+                        <option value="">Томск</option>
+                      </select>
+                    </div>
+                  </div>
+                </div> <!-- .publish-ad-one-item -->
+
+                <div class="publish-ad-one-item clearfix">
+                  <div class="left-column">
+                    <label for="ad-title-field" class="publish-ad-form-label">Название объявления<sup>*</sup></label>
+                  </div>
+                  <div class="right-column">
+                    <div class="main-input publish-input">
+                      <div class="error-message">
+                        <i class="fa fa-exclamation-circle"></i>
+                        <div class="error-message__text">Пожалуйста, укажите заголовок</div>
+                      </div>
+
+                      <input type="text" name="ad-title" id="ad-title-field">
+                    </div>
+                  </div>
+                </div> <!-- .publish-ad-one-item -->
+
+                <div class="publish-ad-one-item clearfix">
+                  <div class="left-column">
+                    <label for="ad-description-field" class="publish-ad-form-label">Описание объявления<sup>*</sup></label>
+                  </div>
+                  <div class="right-column">
+                    <div class="main-input publish-input">
+                      <textarea name="ad-description" id="ad-description-field" cols="" rows=""></textarea>
+                    </div>
+                  </div>
+                </div> <!-- .publish-ad-one-item -->
+
+                <div class="publish-ad-one-item clearfix">
+                  <div class="left-column">
+                    <label for="" class="publish-ad-form-label">Цена<sup>*</sup></label>
+                  </div>
+                  <div class="right-column">
+                    <div class="main-input publish-input">
+                      <div class="price-inputs-wrapper"><input type="radio" name="price-type" value="" checked>
+                      <input type="text" name="price-value" id=""> <i class="fa fa-rub"></i>
+                      <input type="checkbox" class="price-negotiable" id="price-negotiable-type"> <label for="price-negotiable-type">Договорная</label></div>
+                      <div class="price-inputs-wrapper"><input type="radio" name="price-type" value="" class="price-exchange" id="price-exchange-type">
+                      <label for="" id="price-exchange-type">Обмен</label></div>
+                      <div class="price-inputs-wrapper"><input type="radio" name="price-type" value="" class="price-free" id="price-free-type">
+                      <label for="" id="price-free-type">Бесплатно</label></div>
+
+                    </div>
+                  </div>
+                </div> <!-- .publish-ad-one-item -->
+
+                <div class="publish-ad-one-item clearfix">
+                  <div class="left-column">
+                    <label for="" class="publish-ad-form-label">Фотографии
+                      <span>Вы можете добавить не более 5 фотографий</span>
+                    </label>
+                  </div>
+                  <div class="right-column">
+                    <div class="main-input publish-input">
+                      <div class="upload-photo">
+                        <input class="price-add-photo" type="file" name="photo" multiple accept="image/*">
+                      </div>
+                    </div>
+                  </div>
+                </div> <!-- .publish-ad-one-item -->
+
+                <div class="publish-ad-one-item clearfix">
+                  <div class="left-column">
+                    <label for="contact-name-field" class="publish-ad-form-label">Контактное лицо<sup>*</sup></label>
+                  </div>
+                  <div class="right-column">
+                    <div class="main-input publish-input half-input">
+                      <input type="text" name="ad-contact-name" id="contact-name-field">
+                    </div>
+                  </div>
+                </div> <!-- .publish-ad-one-item -->
+
+                <div class="publish-ad-one-item clearfix">
+                  <div class="left-column">
+                    <label for="choose-city" class="publish-ad-form-label">Город<sup>*<sup></label>
+                  </div>
+                  <div class="right-column">
+                    <div class="main-input publish-input half-input">
+                      <select name="city-field" id="choose-city" class="publish-input__select">
+                        <option value="1">Москва</option>
+                        <option value="">Санкт-петербург</option>
+                        <option value="">Казань</option>
+                        <option value="">Владивосток</option>
+                        <option value="">Томск</option>
+                      </select>
+                    </div>
+                  </div>
+                </div> <!-- .publish-ad-one-item -->
+
+                <div class="publish-ad-one-item clearfix">
+                  <div class="left-column">
+                    <label for="choose-category" class="publish-ad-form-label">Метро</label>
+                  </div>
+                  <div class="right-column">
+                    <div class="main-input publish-input half-input">
+                      <select name="category-field" id="choose-category" class="publish-input__select">
+                        <option value="1">-----</option>
+                        <option value="">Санкт-петербург</option>
+                        <option value="">Казань</option>
+                        <option value="">Владивосток</option>
+                        <option value="">Томск</option>
+                      </select>
+                    </div>
+                  </div>
+                </div> <!-- .publish-ad-one-item -->
+
+                <div class="publish-ad-one-item clearfix">
+                  <div class="left-column">
+                    <label for="email-field" class="publish-ad-form-label">Email-адрес<sup>*</sup></label>
+                  </div>
+                  <div class="right-column">
+                    <div class="main-input publish-input half-input">
+                      <input type="text" name="ad-contact-mail" id="email-field">
+                    </div>
+                  </div>
+                </div> <!-- .publish-ad-one-item -->
+
+                <div class="publish-ad-one-item clearfix">
+                  <div class="left-column">
+                    <label for="phone-field" class="publish-ad-form-label">Номер телефона<sup>*</sup></label>
+                  </div>
+                  <div class="right-column">
+                    <div class="main-input publish-input half-input">
+                      <input type="text" name="ad-contact-phone" id="phone-field">
+                    </div>
+                  </div>
+                </div> <!-- .publish-ad-one-item -->
+
+                <div class="publish-ad-one-item clearfix">
+                  <div class="left-column">
+                    <label for="skype-field" class="publish-ad-form-label">Skype</label>
+                  </div>
+                  <div class="right-column">
+                    <div class="main-input publish-input half-input">
+                      <input type="text" name="ad-skype" id="skype-field">
+                    </div>
+                  </div>
+                </div> <!-- .publish-ad-one-item -->
+
+                <div class="publish-ad-one-item clearfix">
+                  <div class="left-column last-form-row">agreement</div>
+                  <div class="right-column">
+                    <div class="main-input publish-input agreement-block">
+                      <input type="checkbox" name="ad-agreement">
+                      <p class="agreement-text"><sup>*</sup> Я соглашаюсь с <a href="#">правилами использования сервиса</a>, а также с передачей и обработкой моих данных в Lovirybu.ru. Я подтверждаю своё совершеннолетие и ответственность за размещение объявления</p>
+                    </div>
+                  </div>
+                </div> <!-- .publish-ad-one-item -->
+
+
+              </form>
+            </section> <!-- .publish-ad-form -->
+
+            <section class="publish-buttons clearfix">
+              <div class="publish-buttons__layout">
+                <a href="#" class="publish-buttons__preview">Предпросмотр</a>
+                <a href="#" class="publish-buttons__to-publish">Опубликовать</a>
+              </div>
+            </section>
+          </div> <!-- .col-lg-8 col-md-8 col-sm-8 col-xs-12 -->
+
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="bottom-menu">
+          <ul>
+            <li class="bottom-menu__item"><a href="#">Подать объявление</a></li>
+            <li class="bottom-menu__item"><a href="#">Объявления</a></li>
+            <li class="bottom-menu__item"><a href="#">Помощь</a></li>
+            <li class="bottom-menu__item"><a href="#">Безопасность</a></li>
+            <li class="bottom-menu__item"><a href="#">Реклама</a></li>
+            <li class="bottom-menu__item"><a href="#">на сайте</a></li>
+            <li class="bottom-menu__item"><a href="#">О компании</a></li>
+          </ul>
+        </div> <!-- .bottom-menu -->
+
+        <div class="social-block">
+          <a href="#" class="vk"></a>
+          <a href="#" class="fb"></a>
+          <a href="#" class="tw"></a>
+          <a href="#" class="yt"></a>
+        </div> <!-- .social-block -->
+
+        <div class="copyright">
+            <span>&copy; 2016 ЛовиРыбу.ru - доска обьявлений для рыболовов.</span>
+        </div>
+
+      </div> <!-- .container -->
+    </footer>
+
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/interface.js"></script>
+  </body>
+</html>

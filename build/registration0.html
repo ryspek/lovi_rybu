@@ -1,0 +1,197 @@
+<html>
+
+  <head>
+    <meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<title>Регистрация</title>
+  	<meta name="description" content="">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.css"> <!-- bootstrap styles -->
+    <link rel="stylesheet" href="css/font-awesome.min.css"> <!-- font-awesome fonts -->
+    <link rel="stylesheet" href="css/jquery.formstyler.css"> <!-- custom styles for inputs -->
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  	<link rel="stylesheet" href="css/styles.css"> <!-- main styles -->
+  </head>
+  <body>
+    <header>
+        <div class="container">
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+
+                <a href="#" class="top-logo">
+                  <img src="images/top-logo.png" alt="">
+                </a> <!-- .top-logo -->
+
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="#"><span>Рыбалка<i class="fa fa-chevron-down"></i></span></a></li>
+                  <li><a href="#"><span>Транспорт<i class="fa fa-chevron-down"></i></span></a></li>
+                  <li><a href="#"><span>Аксессуары<i class="fa fa-chevron-down"></i></span></a></li>
+                  <li><a href="#"><span>Разное<i class="fa fa-chevron-down"></i></span></a></li>
+                </ul>
+                <div class="offer-and-login-block">
+                  <div class="offer">
+                    <a href="" class="offer__link"><span>Подать объявление</span></a>
+                  </div>
+                  <div class="login-block">
+                    <a href="#" class="login-block__first-element"><i class="fa fa-heart"></i></a>
+                    <a href="" class="login-block__second-element">Вход и регистрация</a>
+                  </div>
+                </div> <!-- .offer-and-login-block -->
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+
+        </div>
+    </header>
+
+    <section class="breadcrumb-block">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="#">Главная</a></li>
+          <li class="active">Регистрация</li>
+        </ol>
+      </div>
+    </section>
+    <main id="registration">
+      <div class="container">
+        <h2>Вход</h2>
+        <div class="single-form-layout">
+
+          <section class="registration-form publish-ad-form">
+            <form action="#" method="">
+
+              <div class="publish-ad-one-item clearfix">
+                  <label for="contact-name-field" class="publish-ad-form-label">Имя<sup>*</sup></label>
+                  <div class="registration-input publish-input">
+                    <input type="text" name="ad-contact-name" id="contact-name-field">
+                  </div>
+              </div> <!-- .publish-ad-one-item -->
+
+              <div class="publish-ad-one-item clearfix">
+                  <label for="contact-mail-field" class="publish-ad-form-label">Email<sup>*</sup></label>
+                  <div class="registration-input publish-input">
+                    <input type="text" name="ad-contact-name" id="contact-mail-field">
+                  </div>
+              </div> <!-- .publish-ad-one-item -->
+
+              <div class="publish-ad-one-item clearfix">
+                  <label for="contact-phone-field" class="publish-ad-form-label">Номер телефона<sup>*</sup></label>
+                  <div class="registration-input publish-input phone-number-block">
+                      <div class="phone-number-block__tip">
+                        <span><i class="fa fa-question-circle"></i></span>
+                        <!-- <i class="fa fa-question"></i> -->
+                        <div class="phone-number-block__popup">Пользователям, имеющим мобильный номер с кодом «495», необходимо использовать основной абонентский номер с кодом, начинающимся с «9», уточнить который можно в договоре с оператором связи.</div>
+                      </div>
+                    <input type="text" name="ad-contact-name" id="contact-phone-field">
+                  </div>
+              </div> <!-- .publish-ad-one-item -->
+
+              <div class="publish-ad-one-item clearfix">
+                  <label for="contact-password-field" class="publish-ad-form-label">Пароль<sup>*</sup></label>
+                  <div class="registration-input publish-input">
+                    <input type="text" name="ad-contact-name" id="contact-password-field">
+                  </div>
+              </div> <!-- .publish-ad-one-item -->
+
+              <div class="publish-ad-one-item clearfix">
+                  <label for="contact-password-repeat-field" class="publish-ad-form-label">Повторить пароль<sup>*</sup></label>
+                  <div class="registration-input publish-input">
+                    <input type="text" name="ad-contact-name" id="contact-password-repeat-field">
+                  </div>
+              </div> <!-- .publish-ad-one-item -->
+
+              <div class="publish-ad-one-item clearfix">
+                  <label for="image-text-field" class="publish-ad-form-label">Текст с картинки</label>
+                  <div class="registration-input publish-input">
+                    <input type="text" name="ad-contact-name" id="image-text-field" class="registration-input__captcha">
+                    <img class="registration-input__captcha-img" src="images/captcha-img.jpg" alt="">
+                    <a href="#" class="registration-input__link"><i class="fa fa-refresh"></i></a>
+                  </div>
+              </div> <!-- .publish-ad-one-item -->
+
+              <div class="publish-ad-one-item clearfix">
+                <div class="registration-input publish-input agreement-block">
+                  <input type="checkbox" name="ad-agreement" checked>
+                  <p class="agreement-text">Я хочу получать информационные сообщения от ЛовиРыбу.ру</p>
+                </div>
+              </div> <!-- .publish-ad-one-item -->
+
+              <div class="publish-ad-one-item clearfix">
+                <div class="registration-input publish-input">
+                  <input type="submit" name="register" class="registration-input__button" value="Зарегистрироваться">
+                </div>
+              </div> <!-- .publish-ad-one-item -->
+
+              <p class="registraion-form__text-block">
+                Регистрируясь, я подтверждаю своё согласие с условиями <a href="#">пользовательского соглашения</a>
+              </p>
+
+              <div class="registration-form__social-block social-elements">
+                <div class="social-elements__text">или</div>
+                <div class="social-elements__links">
+                  <a href="" class="social-elements__link vk"></a>
+                  <a href="" class="social-elements__link ok"></a>
+                  <a href="" class="social-elements__link fb"></a>
+                  <a href="" class="social-elements__link gp"></a>
+                  <a href="" class="social-elements__link tw"></a>
+                </div>
+              </div>
+
+
+            </form>
+          </section> <!-- .registration-form .publish-ad-form -->
+
+          <div class="single-block-layout__text">Уже зарегистрированы? <a href="#" class="single-block-layout__link">Войти</a></div>
+        </div> <!-- .single-block-layout -->
+      </div> <!-- .container -->
+
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="bottom-menu">
+          <ul>
+            <li class="bottom-menu__item"><a href="#">Подать объявление</a></li>
+            <li class="bottom-menu__item"><a href="#">Объявления</a></li>
+            <li class="bottom-menu__item"><a href="#">Помощь</a></li>
+            <li class="bottom-menu__item"><a href="#">Безопасность</a></li>
+            <li class="bottom-menu__item"><a href="#">Реклама</a></li>
+            <li class="bottom-menu__item"><a href="#">на сайте</a></li>
+            <li class="bottom-menu__item"><a href="#">О компании</a></li>
+          </ul>
+        </div> <!-- .bottom-menu -->
+
+        <div class="social-block">
+          <a href="#" class="vk"></a>
+          <a href="#" class="fb"></a>
+          <a href="#" class="tw"></a>
+          <a href="#" class="yt"></a>
+        </div> <!-- .social-block -->
+
+        <div class="copyright">
+            <span>&copy; 2016 ЛовиРыбу.ru - доска обьявлений для рыболовов.</span>
+        </div>
+
+      </div> <!-- .container -->
+    </footer>
+
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/interface.js"></script>
+  </body>
+</html>

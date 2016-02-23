@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.css"> <!-- bootstrap styles -->
     <link rel="stylesheet" href="css/font-awesome.min.css"> <!-- font-awesome fonts -->
     <link rel="stylesheet" href="css/jquery.formstyler.css"> <!-- custom styles for inputs -->
+    <link href="css/lightbox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
   	<link rel="stylesheet" href="css/styles.css"> <!-- main styles -->
   </head>
@@ -38,6 +39,7 @@
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                   <li><a href="#"><span>Рыбалка<i class="fa fa-chevron-down"></i></span></a></li>
+                  <li><a href="#"><span>Туризм<i class="fa fa-chevron-down"></i></span></a></li>
                   <li><a href="#"><span>Транспорт<i class="fa fa-chevron-down"></i></span></a></li>
                   <li><a href="#"><span>Разное<i class="fa fa-chevron-down"></i></span></a></li>
                 </ul>
@@ -82,15 +84,19 @@
                 </div>
               </div>
               <div class="big-photo">
-                <a href="#"><img src="images/big-photo.jpg" alt=""></a>
+                <a id="img1" href="images/big-photo.jpg" data-lightbox="roadtrip" data-title="item"><img src="images/big-photo.jpg" alt=""></a>
+                <a id="img2" href="images/mini-card_image-2.png" data-lightbox="roadtrip" data-title="item"><img src="images/mini-card_image-2.png" alt=""></a>
+                <a id="img3" href="images/big-photo.jpg" data-lightbox="roadtrip" data-title="item"><img src="images/big-photo.jpg" alt=""></a>
+                <a id="img4" href="images/mini-card_image-2.png" data-lightbox="roadtrip" data-title="item"><img src="images/mini-card_image-2.png" alt=""></a>
+                <a id="img5" href="images/big-photo.jpg" data-lightbox="roadtrip" data-title="item"><img src="images/big-photo.jpg" alt=""></a>
               </div>
 
               <div class="small-photos">
-                <a href="#" class="active small-photo"><img src="images/small-photo.jpg" alt=""></a>
-                <a href="#" class="small-photo"><img src="images/small-photo.jpg" alt=""></a>
-                <a href="#" class="small-photo"><img src="images/small-photo.jpg" alt=""></a>
-                <a href="#" class="small-photo"><img src="images/small-photo.jpg" alt=""></a>
-                <a href="#" class="small-photo"><img src="images/small-photo.jpg" alt=""></a>
+                <a href="#img1" class="active small-photo"><img src="images/small-photo.jpg" rel="images/big-photo.jpg" alt=""></a>
+                <a href="#img2" class="small-photo"><img src="images/small-photo.jpg" rel="images/mini-card_image-2.png" alt=""></a>
+                <a href="#img3" class="small-photo"><img src="images/small-photo.jpg" rel="images/big-photo.jpg" alt=""></a>
+                <a href="#img4" class="small-photo"><img src="images/small-photo.jpg" rel="images/mini-card_image-2.png" alt=""></a>
+                <a href="#img5" class="small-photo"><img src="images/small-photo.jpg" rel="images/big-photo.jpg" alt=""></a>
               </div>
             </section> <!-- .products-photos -->
 
@@ -288,6 +294,7 @@
     <script src="js/jquery-2.2.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
     <script src="js/interface.js"></script>
   </body>
 </html>
